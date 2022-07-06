@@ -1,0 +1,105 @@
+{
+    "name": "TestExtensionFolder",
+    "fantasyName": "TestExtension",
+    "vendor": "FP",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "version": "1.0.2",
+    "description": "My cool extension does magic!",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/TestExtension.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/TestExtension/Configuration/TestExtension.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/TestExtension/Templates/fp_testextensionfolder_testextension.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/TestExtension/Templates/fp_testextensionfolder_testextension.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/TestExtension/Templates/fp_testextensionfolder_testextension.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/TestExtension/Sass/_testextensionfolder-testextension.scss",
+            "myaccount": "Modules/TestExtension/Sass/_testextensionfolder-testextension.scss",
+            "checkout": "Modules/TestExtension/Sass/_testextensionfolder-testextension.scss"
+        },
+        "files": [
+            "Modules/TestExtension/Sass/_testextensionfolder-testextension.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.js",
+            "myaccount": "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.js",
+            "checkout": "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.js",
+                    "Modules/TestExtension/JavaScript/TestExtension.View.js",
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.Model.js",
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.js",
+                    "Modules/TestExtension/JavaScript/TestExtension.View.js",
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.Model.js",
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.js",
+                    "Modules/TestExtension/JavaScript/TestExtension.View.js",
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.Model.js",
+                    "Modules/TestExtension/JavaScript/FP.TestExtensionFolder.TestExtension.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/TestExtension/SuiteScript/FP.TestExtensionFolder.TestExtension.js",
+        "files": [
+            "Modules/TestExtension/SuiteScript/FP.TestExtensionFolder.TestExtension.js",
+            "Modules/TestExtension/SuiteScript/TestExtension.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/TestExtension/SuiteScript2/TestExtension.Service.ss"
+        ]
+    }
+}

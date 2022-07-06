@@ -1,0 +1,16 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-item-list-show-selector {
+    font-weight: 500;
+    @extend .list-header-filter-input;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    height: 35px;
+    padding: 5px 22px 5px 10px;
+}

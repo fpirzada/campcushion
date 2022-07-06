@@ -1,0 +1,166 @@
+{
+	"name": "FeaturedCategory",
+	"fantasyName": "Featured Category",
+	"vendor": "NetSuite",
+	"version": "1.2.0",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The SuiteCommerce Featured Category extension lets you highlight a commerce category on your website using Site Management Tools.",
+	"cct": [
+		{
+			"icon": "img/cct_netsuite_featuredcategorycct_icon.svg",
+			"settings_record": "customrecordcct_netsuite_featcategorycct",
+			"registercct_id": "cct_netsuite_featuredcategorycct",
+			"label": "Featured Category",
+			"description": "Highlight a collection of products on your website."
+		}
+	],
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": [
+				"img/cct_netsuite_featuredcategorycct_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/FeaturedCategory.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_sc-featured-category-entry-point.scss",
+			"myaccount": "Modules/Main/Sass/_sc-featured-category-entry-point.scss",
+			"checkout": "Modules/Main/Sass/_sc-featured-category-entry-point.scss"
+		},
+		"files": [
+			"Modules/FeaturedCategory/Sass/_featuredcategorycct.scss",
+			"Modules/Main/Sass/_sc-featured-category-entry-point.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FeaturedCategory/Templates/sc_featuredcategory_button.tpl",
+					"Modules/FeaturedCategory/Templates/sc_featuredcategory_cct.tpl",
+					"Modules/Item/Templates/sc_featuredcategory_item.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FeaturedCategory/Templates/sc_featuredcategory_button.tpl",
+					"Modules/FeaturedCategory/Templates/sc_featuredcategory_cct.tpl",
+					"Modules/Item/Templates/sc_featuredcategory_item.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FeaturedCategory/Templates/sc_featuredcategory_button.tpl",
+					"Modules/FeaturedCategory/Templates/sc_featuredcategory_cct.tpl",
+					"Modules/Item/Templates/sc_featuredcategory_item.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.FeaturedCategory.EntryPoint.js",
+			"myaccount": "Modules/Main/JavaScript/SuiteCommerce.FeaturedCategory.EntryPoint.js",
+			"checkout": "Modules/Main/JavaScript/SuiteCommerce.FeaturedCategory.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Button.Model.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Button.View.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Configuration.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Model.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.View.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Item/JavaScript/Item.Collection.js",
+					"Modules/Item/JavaScript/Item.Configuration.js",
+					"Modules/Item/JavaScript/Item.Model.js",
+					"Modules/Item/JavaScript/Item.View.js",
+					"Modules/Main/JavaScript/SuiteCommerce.FeaturedCategory.EntryPoint.js",
+					"Modules/Common/JavaScript/DependencyProvider.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Button.Model.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Button.View.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Configuration.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Model.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.View.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Item/JavaScript/Item.Collection.js",
+					"Modules/Item/JavaScript/Item.Configuration.js",
+					"Modules/Item/JavaScript/Item.Model.js",
+					"Modules/Item/JavaScript/Item.View.js",
+					"Modules/Main/JavaScript/SuiteCommerce.FeaturedCategory.EntryPoint.js",
+					"Modules/Common/JavaScript/DependencyProvider.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Button.Model.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Button.View.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Configuration.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.Model.js",
+					"Modules/FeaturedCategory/JavaScript/FeaturedCategory.View.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Item/JavaScript/Item.Collection.js",
+					"Modules/Item/JavaScript/Item.Configuration.js",
+					"Modules/Item/JavaScript/Item.Model.js",
+					"Modules/Item/JavaScript/Item.View.js",
+					"Modules/Main/JavaScript/SuiteCommerce.FeaturedCategory.EntryPoint.js",
+					"Modules/Common/JavaScript/DependencyProvider.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/FeaturedCategory/SuiteScript/SuiteCommerce.FeaturedCategory.js",
+		"files": [
+			"Modules/FeaturedCategory/SuiteScript/FeaturedCategory.Model.js",
+			"Modules/FeaturedCategory/SuiteScript/FeaturedCategory.ServiceController.js",
+			"Modules/FeaturedCategory/SuiteScript/SuiteCommerce.FeaturedCategory.js"
+		]
+	},
+	"local_folder": "Workspace\\FeaturedCategory",
+	"path": "SuiteScripts/extensions/NetSuite/FeaturedCategory@1.2.0",
+	"activation_id": "3",
+	"extension_id": "601"
+}

@@ -1,0 +1,65 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Edited for Bridge Theme
+.facets-category-cell {
+    height: 140px;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: $sc-margin-lv2;
+    text-align: center;
+    margin-bottom: $sc-margin-lv6;
+    width: 50%;
+    @media (min-width: $screen-md-min) {
+        width: 16%;
+    }
+    &:nth-child(2n+1) {
+        // clear after every 2nd cell
+        @media (max-width: $screen-md-max) {
+            clear: both;
+        }
+    }
+    &:nth-child(6n+1) {
+        // clear after every 6th cell
+        @media (min-width: $screen-md-min) {
+            clear: both;
+        }
+    }
+}
+
+.facets-category-cell .facets-category-cell-thumbnail {}
+
+.facets-category-cell-image {
+    height: 105px;
+}
+
+.facets-category-cell:hover .facets-category-cell-image {
+    box-shadow: 0px 0px 0px 1px #BCBCBC;
+    transition: box-shadow 0.2s linear;
+    // margin-bottom: 1px;
+    height: 105px;
+}
+
+.facets-category-cell:hover .facets-category-cell-anchor {
+    text-decoration: solid underline black 1px;
+}
+
+.facets-category-cell-title {
+    // padding: $sc-padding-lv2 $sc-padding-base * 0;
+    padding: 0px 10px;
+    line-height: 1;
+}
+
+.facets-category-cell-anchor {
+    color: black;
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
+}

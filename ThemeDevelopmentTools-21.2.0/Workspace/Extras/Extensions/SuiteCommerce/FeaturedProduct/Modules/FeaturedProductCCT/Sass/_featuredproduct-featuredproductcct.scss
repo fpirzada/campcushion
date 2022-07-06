@@ -1,0 +1,80 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in order
+*/
+
+$sc-fp-stock-availability-bg: $sc-color-info-background; /* editable({
+   "type": "color",
+   "label": "Stock availability background color"
+})*/
+
+$sc-fp-ribbon-bg-color: $sc-color-theme-background; /* editable({
+   "type": "color",
+   "label": "Ribbon background color"
+})*/
+
+$sc-fp-instock-icon-color: darkgreen; /* editable({
+   "type": "color",
+   "label": "In stock icon color"
+})*/
+
+$sc-fp-outofstock-icon-color: darkred; /* editable({
+   "type": "color",
+   "label": "Out of stock icon color"
+})*/
+
+$sc-fp-ribbon-text-color: $sc-color-secondary; /* editable({
+   "type": "color",
+   "label": "Ribbon text color"
+})*/
+
+$sc-fp-image-alignment: flex-start; /* editable({
+    "type": "string",
+    "label": "Image Alignment",
+    "options": [
+        {"value": "flex-start", "text": "Top"},
+        {"value": "center", "text": "Center"},
+        {"value": "flex-end", "text": "Bottom"}]
+}) */
+
+
+/*
+group({
+ "id": "sc-fp-ribbon",
+ "label": "Ribbon",
+ "description": "",
+ "children": [
+      "$sc-fp-ribbon-bg-color",
+      "$sc-fp-ribbon-text-color"
+ ]
+})
+*/
+
+/*
+group({
+ "id": "sc-fp-stock-availability",
+ "label": "Stock availability",
+ "description": "",
+ "children": [
+      "$sc-fp-stock-availability-bg",
+      "$sc-fp-instock-icon-color",
+      "$sc-fp-outofstock-icon-color"
+ ]
+})
+*/
+
+
+/*
+group({
+   "id": "sc-featured-product",
+   "label": "Featured Product",
+   "description": "",
+   "children": [
+      "sc-fp-stock-availability",
+      "sc-fp-ribbon",
+      "$sc-fp-image-alignment"
+   ]
+})
+*/
+
+@import "featuredproductcct";

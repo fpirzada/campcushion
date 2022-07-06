@@ -1,0 +1,116 @@
+
+.featuredproductcct-layout {
+  margin-bottom: $sc-margin-lv4;
+  margin-top: $sc-margin-lv4;
+
+  &-invalid-item-message {
+		@extend .message-error;
+	}
+
+  &-row {
+    @extend .row;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-col {
+    @extend .col-xs-12, .col-sm-6, .col-md-6, .col-lg-5;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+  }
+
+  &-col-image {
+    @extend .featuredproductcct-layout-col;
+    justify-content: $sc-fp-image-alignment;
+
+    &-container {
+      position: relative;
+    }
+
+  }
+
+  &-col-item-info {
+    @extend .featuredproductcct-layout-col;
+  }
+
+  .product-content {
+    margin-top: 10px;
+    word-wrap: break-word;
+  }
+
+  .product-image{
+    max-height: 550px;
+  }
+
+  .in-stock-icon{
+    color: $sc-fp-instock-icon-color;
+    @extend .fa;
+    @extend %fa-check-circle;
+  }
+
+  .out-of-stock-icon{
+    color: $sc-fp-outofstock-icon-color;
+    @extend .fa;
+    @extend %fa-times-circle;
+  }
+
+  .product-formatted-price {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .stock-availability{
+    background-color: $sc-fp-stock-availability-bg;
+    border-radius: 3px;
+    padding: 2px 4px;
+  }
+
+  .button-container {
+    width: 100%;
+    margin-top: 20px;
+
+    @media (min-width: $screen-xs-min) {
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 20px !important;
+      position: relative !important;
+      bottom: 0px;
+    }
+  }
+
+  .button-style-one {
+    @extend .button-primary;
+    @extend .button-large;
+    @media (min-width: $screen-xs-min) {
+      width: auto;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+  .button-style-two {
+    @extend .button-secondary;
+    @extend .button-large;
+    @media (min-width: $screen-xs-min) {
+      width: auto;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+  .ribbon {
+    @extend h2;
+    position: absolute;
+    top: 30px;
+    color: $sc-fp-ribbon-text-color;
+    background-color: $sc-fp-ribbon-bg-color;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    word-wrap: break-word;
+    max-width: calc(100% - 30px);
+    display: inline-block;
+  }
+}

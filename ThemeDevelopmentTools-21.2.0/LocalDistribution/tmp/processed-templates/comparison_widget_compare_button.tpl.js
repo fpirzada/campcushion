@@ -1,0 +1,7 @@
+define('comparison_widget_compare_button.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return "<div class=\"sc-addedfromcomparison-compare\">\n  <button type=\"button\" class=\"sc-addedfromcomparison-compare-button\"\n          data-action=\"proceed-to-compare-products\">\n    "
+    + ((stack1 = ((helper = (helper = compilerNameLookup(helpers,"compareButtonLabel") || (depth0 != null ? compilerNameLookup(depth0,"compareButtonLabel") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"compareButtonLabel","hash":{},"data":data,"loc":{"start":{"line":4,"column":4},"end":{"line":4,"column":28}}}) : helper))) != null ? stack1 : "")
+    + "\n  </button>\n</div>\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/SuiteCommerce/ProductComparison/1.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.9/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'comparison_widget_compare_button'; return template;});

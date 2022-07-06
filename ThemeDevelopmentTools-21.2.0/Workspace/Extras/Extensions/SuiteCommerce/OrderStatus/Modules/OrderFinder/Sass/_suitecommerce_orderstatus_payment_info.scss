@@ -1,0 +1,43 @@
+.sc-order-status{
+  &-payment{
+    &-accordion {
+      margin-top: $sc-margin-base * 3;
+    }
+
+    &-method{
+      @extend .col-md-6;
+      @extend .col-xs-6;
+      padding-left: 0;
+      padding-right: $sc-padding-base * 3;
+    }
+
+    &-method-title {
+      &-thumb {
+        float: left;
+        img {
+          height: 22px;
+          max-height: 25px;
+          margin-right: $sc-margin-base * 2;
+        }
+      }
+
+      &-name {
+        width: 65%;
+        float: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    &-bill-address-container{
+      @extend .col-md-6;
+      @extend .col-xs-6;
+      padding:0;
+    }
+  }
+
+  &-box-header {
+    margin-bottom: $sc-margin-base;
+  }
+}

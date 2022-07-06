@@ -1,0 +1,23 @@
+define('comparison_page_item_name_columns.partial.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "  <td class=\"comparison-item-header\" data-itemid=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"internalid") || (depth0 != null ? compilerNameLookup(depth0,"internalid") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"internalid","hash":{},"data":data,"loc":{"start":{"line":2,"column":50},"end":{"line":2,"column":64}}}) : helper)))
+    + "\">\n    <div class=\"item-remover\" >\n      <button type=\"button\" class=\"item-remover-button\"\n              data-itemid=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"internalid") || (depth0 != null ? compilerNameLookup(depth0,"internalid") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"internalid","hash":{},"data":data,"loc":{"start":{"line":5,"column":27},"end":{"line":5,"column":41}}}) : helper)))
+    + "\" data-action=\"remove-item-from-comparison\"\n              data-toggle=\"tooltip\"  data-placement=\"left\"\n              title=\""
+    + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,(depths[1] != null ? compilerNameLookup(depths[1],"comparisonPageRemoveItemHelperText") : depths[1]),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":7,"column":21},"end":{"line":7,"column":72}}}))
+    + "\">\n        <h4>\n            <i class=\"item-remover-button-icon\" data-itemid=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"internalid") || (depth0 != null ? compilerNameLookup(depth0,"internalid") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"internalid","hash":{},"data":data,"loc":{"start":{"line":9,"column":61},"end":{"line":9,"column":75}}}) : helper)))
+    + "\"></i>\n        </h4>\n      </button>\n    </div>\n    <div class=\"name-container\">\n      <h4 data-itemid=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"internalid") || (depth0 != null ? compilerNameLookup(depth0,"internalid") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"internalid","hash":{},"data":data,"loc":{"start":{"line":14,"column":23},"end":{"line":14,"column":37}}}) : helper)))
+    + "\" data-action=\"navigate-to-item-pdp\"\n        data-itemurl=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"url") || (depth0 != null ? compilerNameLookup(depth0,"url") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data,"loc":{"start":{"line":15,"column":22},"end":{"line":15,"column":29}}}) : helper)))
+    + "\">\n        "
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"name") || (depth0 != null ? compilerNameLookup(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":16,"column":8},"end":{"line":16,"column":16}}}) : helper)))
+    + "\n      </h4>\n    </div>\n  </td>\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1;
+
+  return ((stack1 = compilerNameLookup(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"items") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":20,"column":9}}})) != null ? stack1 : "");
+},"useData":true,"useDepths":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/SuiteCommerce/ProductComparison/1.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.9/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'comparison_page_item_name_columns.partial'; return template;});

@@ -1,0 +1,140 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Edited for Bridge Theme
+.facets-item-cell-grid {
+    @extend .item-cell;
+    .cart-add-to-cart-button-container {
+        width: 100%;
+        padding: 0;
+    }
+    // .cart-add-to-cart-button-button {
+    // 	padding:20px;
+    // }
+    // .cart-quickaddtocart-price {
+    // 	margin-bottom:$sc-margin-lv2;
+    // }
+}
+
+.facets-item-cell-grid-quick-view-wrapper {
+    @extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-grid-quick-view-link {
+    background: #00426A;
+    border-color: #00426A;
+    border-radius: 5px;
+    font-size: x-small;
+    padding: 6px 10px;
+    text-transform: capitalize;
+    @extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-grid-quick-view-link:hover {
+    background: #00426A;
+    border-color: #00426A;
+}
+
+.facets-item-cell-grid-image-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.facets-item-cell-grid-link-image {}
+
+.facets-item-cell-grid-quick-view-icon {}
+
+.facets-item-cell-grid-stock {
+    margin-top: $sc-margin-lv1;
+}
+
+.facets-item-cell-grid-add-to-cart-itemid {}
+
+.facets-item-cell-grid-details {
+    text-align: left;
+    // width: 150px; //match image width
+    // margin-left: auto;
+    // margin-right: auto;
+    // .product-line-stock {
+    // 	text-align:left;
+    // }
+    // .cart-add-to-cart-button-container {
+    // 	padding: 0 0 $sc-padding-lv3 0;
+    // }
+}
+
+.facets-item-cell-grid-image {
+    @extend .item-cell-image;
+    // width:100%;
+    // height:auto;
+}
+
+.facets-item-cell-grid-title {
+    @extend .item-cell-title;
+    color: black;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 12px;
+    padding: 5px 0 0 0;
+    height: 35px;
+}
+
+.facets-item-cell-grid-price {
+    @extend .small-price;
+    margin-bottom: $sc-margin-lv2;
+}
+
+.facets-item-cell-grid-rating {
+    text-align: center;
+    display: inline-block;
+}
+
+.facets-item-cell-grid .item-details-option-color-tiles-container {
+    @extend .color-picker-sm;
+}
+
+.facets-item-cell-grid .item-details-option-color-label {
+    display: none;
+}
+
+.facets-item-cell-grid {
+    .global-views-star-rating-area {
+        margin-bottom: $sc-margin-lv2;
+    }
+}
+
+.facets-item-cell-grid-add-to-cart-quantity {
+    @extend .input-medium;
+}
+
+.facets-item-cell-grid-add-to-cart-button {
+    @extend .button-primary;
+    @extend .button-medium;
+}
+
+.facets-item-cell-grid-stock-message {
+    text-align: left;
+}
+
+// custom
+.btn_ {
+    display: block;
+    border: 1px solid #00426A !important;
+    border-radius: 7px !important;
+    padding: 5px;
+    margin: 10px 0 5px 0;
+    background-color: #00426A !important;
+    color: #ffffff !important;
+    margin: 0px 0 0 0 !important;
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+}
+
+.product-views-price-lead {
+    font-size: 12px;
+}

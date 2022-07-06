@@ -1,0 +1,228 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+// Edited for Bridge Theme
+
+///////////////////////////////////////////////////////////////
+//header secondary nav
+.header-menu-secondary-nav {
+    @extend .container;
+    padding: 0;
+    background-color: $sc-main-navigation-background-color !important;
+}
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+	float: right;
+}
+
+.header-menu-search-link {
+	font-size: $sc-font-size-xl;
+	background: none;
+	padding: $sc-padding-lv2;
+	color: $sc-search-icon-color;
+	cursor: pointer;
+	position: relative;
+	// line-height: 34px;
+}
+.header-menu-search-link:hover {
+	color: $sc-search-icon-color-hover;
+}
+.header-menu-search-link.active {
+	color: $sc-search-icon-color-hover;
+}
+
+.header-menu-search-icon {
+	@extend .fa;
+	@extend %fa-search;
+	font-size: 15px;
+}
+
+.header-menu-searchmobile-link {
+	margin-right: 0;
+	cursor: pointer;
+	background: none;
+
+	@media (min-width: $screen-sm-min) {
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+    margin-left: 0;
+    height: 50px;
+    max-width: 100%;
+}
+
+.header-menu-level1 > li {
+	float: left;
+}
+
+.header-menu-level1-anchor {
+    position: relative;
+    line-height: $sc-target-size;
+    font-family: $sc-theme-secondary-font;
+    font-size: 14px;
+
+	padding: 0 7px;
+	margin-right: $sc-main-navigation-link-margin-right;
+
+	/*color: $sc-main-navigation-link-color;*/
+	color: #00426a;
+    background-color: $sc-main-navigation-link-background-color;
+    /*font-weight: $sc-font-weight-semibold;*/
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: $sc-main-navigation-link-letter-spacing;
+
+    border-style: solid;
+	border-color: $sc-main-navigation-link-border-color;
+
+	border-top-width: $sc-main-navigation-link-border-top-width;
+
+	border-bottom-width: $sc-main-navigation-link-border-bottom-width;
+
+    &:hover, &:focus{
+		color: $sc-main-navigation-link-hover-color;
+		background-color: $sc-main-navigation-link-hover-background-color;
+
+		border-style: solid;
+		border-color: $sc-main-navigation-link-hover-border-color;
+
+		border-top-width: $sc-main-navigation-link-hover-border-top-width;
+
+		border-bottom-width: $sc-main-navigation-link-hover-border-bottom-width;
+		text-decoration:underline;
+	}
+
+	&:active {
+		color: $sc-main-navigation-link-active-color;
+		background-color: $sc-main-navigation-link-active-background-color;
+
+		border-style: solid;
+		border-color: $sc-main-navigation-link-active-border-color;
+
+		border-top-width: $sc-main-navigation-link-active-border-top-width;
+		// padding-top: ($sc-padding-lv2) - ($sc-main-navigation-link-active-border-top-width);
+
+		border-bottom-width: $sc-main-navigation-link-active-border-bottom-width;
+		// padding-bottom: ($sc-padding-lv2) - ($sc-main-navigation-link-active-border-bottom-width);
+	}
+}
+
+.open .header-menu-level1-anchor{
+	color: $sc-main-navigation-link-active-color;
+}
+
+.header-menu-home-anchor,
+.header-menu-shop-anchor{
+	@extend .header-menu-level1-anchor;
+}
+
+//maxi menu level 2
+.header-menu-back {
+	display: none;
+}
+
+.header-menu-level2 > li {
+	float: left;
+	width: 20%;
+	height: 50px;
+}
+h3.menu-head {color: #01426a;font-weight:600;text-decoration: underline;margin-bottom: 10px;}
+.view-all {color: #01426a;margin-bottom: 10px;display: block;}
+.view-all:hover {text-decoration: underline;}
+.header-menu-level2-anchor {
+    font-family: $sc-theme-secondary-font;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 400;
+    color: #000000 !important;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 13px;
+    padding: 0;
+    line-height: 30px;
+	&:hover {
+		color: #000000;
+	}
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+	display: block;
+	padding: $sc-padding-lv1 0;
+	color: $sc-main-navigation-submenu-link-color;
+
+	&:hover, &:focus {
+		color: $sc-main-navigation-submenu-link-hover-color;
+	}
+
+	&:active, &.active {
+		color: $sc-main-navigation-submenu-link-active-color;
+	}
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon, .header-menu-pop-icon {
+	display: none;
+}
+.header-menu-level2 > li a {
+    line-height: 1.2;
+}
+.header-menu-level-container {
+	background-color: $sc-main-navigation-full-width-submenu-background-color;
+	display: none;
+	position: absolute;
+	left: -140px;
+	width: 100%;
+	min-height: 150px;
+    z-index: 1003;
+    top: 100%;
+	> li {
+        @extend .container;
+        background-color: $sc-main-navigation-submenu-background-color;
+         padding: 25px;
+	}
+}
+
+//maxi menu opened
+.open .header-menu-level-container {
+	display: block;
+}
+
+.open .header-menu-level1-anchor:before{
+	position: absolute;
+	top: 47px;
+	left: 50%;
+	margin-left: -7.5px;
+	display: inline-block;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid $sc-neutral-shade-0;
+	border-left: 7px solid transparent;
+	border-bottom-color: transparentize($sc-neutral-shade-500, 1-0.2);
+	content: '';
+}
+
+.open .header-menu-level1-anchor:after{
+	position: absolute;
+	top: 48px;
+	left: 50%;
+	margin-left: -6.5px;
+	display: inline-block;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid $sc-neutral-shade-0;
+	border-left: 6px solid transparent;
+	content: '';
+	z-index: 9999;
+}

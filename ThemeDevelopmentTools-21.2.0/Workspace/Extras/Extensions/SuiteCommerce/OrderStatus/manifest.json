@@ -1,0 +1,86 @@
+{
+	"name": "OrderStatus",
+	"fantasyName": "Order Status",
+	"vendor": "SuiteCommerce",
+	"version": "1.0.3",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Allows customers to quickly see the status of their orders, including shipping information, without being logged in.",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/Main.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_orderstatus.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_orderstatus.scss",
+			"Modules/OrderFinder/Sass/_accordion.scss",
+			"Modules/OrderFinder/Sass/_suitecommerce_orderstatus_orderdetails.scss",
+			"Modules/OrderFinder/Sass/_suitecommerce_orderstatus_orderfinder.scss",
+			"Modules/OrderFinder/Sass/_suitecommerce_orderstatus_payment_info.scss",
+			"Modules/OrderFinder/Sass/_suitecommerce_orderstatus_summary.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/OrderFinder/Templates/suitecommerce_orderstatus_itemdetails.tpl",
+					"Modules/OrderFinder/Templates/suitecommerce_orderstatus_payment_info.tpl",
+					"Modules/OrderFinder/Templates/suitecommerce_orderstatus_search_form.tpl",
+					"Modules/OrderFinder/Templates/suitecommerce_orderstatus_search_form_help.tpl",
+					"Modules/OrderFinder/Templates/suitecommerce_orderstatus_search_results.tpl",
+					"Modules/OrderFinder/Templates/suitecommerce_orderstatus_summary.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.OrderStatus.Shopping.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.Collection.js",
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/InstrumentationHelper.Model.js",
+					"Modules/Instrumentation/JavaScript/Logger.js",
+					"Modules/Main/JavaScript/SuiteCommerce.OrderStatus.Shopping.js",
+					"Modules/Main/JavaScript/Utils.js",
+					"Modules/OrderFinder/JavaScript/OrderFinder.Help.View.js",
+					"Modules/OrderFinder/JavaScript/OrderFinder.ItemDetails.View.js",
+					"Modules/OrderFinder/JavaScript/OrderFinder.Order.Model.js",
+					"Modules/OrderFinder/JavaScript/OrderFinder.OrderPaymentInfo.View.js",
+					"Modules/OrderFinder/JavaScript/OrderFinder.OrderSummary.View.js",
+					"Modules/OrderFinder/JavaScript/OrderFinder.Router.js",
+					"Modules/OrderFinder/JavaScript/OrderFinder.SearchForm.View.js",
+					"Modules/OrderFinder/JavaScript/OrderFinder.SearchResults.View.js",
+					"Modules/Common/JavaScript/Configuration.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js",
+					"Modules/Common/JavaScript/DependencyProvider.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace/OrderStatus",
+	"path": "SuiteScripts/extensions/SuiteCommerce/OrderStatus@1.0.3",
+	"activation_id": "3",
+	"extension_id": "1103"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "TestExtension.config": {
+            "group": "extensions",
+            "subtab": "TestExtension_subtab",
+            "type": "string",
+            "title": "TestExtension_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

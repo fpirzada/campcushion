@@ -1,0 +1,136 @@
+{
+	"name": "Testimonials",
+	"fantasyName": "Testimonials",
+	"vendor": "NetSuite",
+	"version": "1.0.2",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "The SuiteCommerce Testimonials extension lets you add testimonials with images, texts and links to your website using Site Management Tools.",
+	"cct": [
+		{
+			"icon": "img/ns_sc_ext_ctestimonialscct_icon.svg",
+			"settings_record": "customrecord_ns_sc_ext_ctestimonialscct",
+			"registercct_id": "ns_sc_ext_ctestimonialscct",
+			"label": "Testimonials",
+			"description": "Add testimonials with images, texts and links to your website."
+		}
+	],
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": [
+				"img/ns_sc_ext_ctestimonialscct_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_sc-testimonials-main.scss",
+			"myaccount": "Modules/Main/Sass/_sc-testimonials-main.scss",
+			"checkout": "Modules/Main/Sass/_sc-testimonials-main.scss"
+		},
+		"files": [
+			"Modules/BxSlider4.2.14/jquery.bxslider.scss",
+			"Modules/TestimonialsCCT/Sass/_sc-testimonials-testimonialscct.scss",
+			"Modules/Main/Sass/_sc-testimonials-main.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_horizontal.tpl",
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_vertical.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_horizontal.tpl",
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_vertical.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_horizontal.tpl",
+					"Modules/TestimonialsCCT/Templates/netsuite_testimonialscct_vertical.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.Testimonials.Main.js",
+			"myaccount": "Modules/Main/JavaScript/SuiteCommerce.Testimonials.Main.js",
+			"checkout": "Modules/Main/JavaScript/SuiteCommerce.Testimonials.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.View.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/Testimonial/JavaScript/Testimonial.Collection.js",
+					"Modules/Testimonial/JavaScript/Testimonial.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Configuration.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.js",
+					"Modules/Main/JavaScript/SuiteCommerce.Testimonials.Main.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.View.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/Testimonial/JavaScript/Testimonial.Collection.js",
+					"Modules/Testimonial/JavaScript/Testimonial.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Configuration.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.js",
+					"Modules/Main/JavaScript/SuiteCommerce.Testimonials.Main.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.View.js",
+					"Modules/Common/JavaScript/Utils.js",
+					"Modules/Testimonial/JavaScript/Testimonial.Collection.js",
+					"Modules/Testimonial/JavaScript/Testimonial.Model.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.Configuration.js",
+					"Modules/TestimonialsCCT/JavaScript/TestimonialsCCT.js",
+					"Modules/Main/JavaScript/SuiteCommerce.Testimonials.Main.js",
+					"Modules/Common/JavaScript/InstrumentationHelper.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.FallbackLogger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.MockAppender.js"
+				]
+			}
+		}
+	},
+	"local_folder": "Workspace\\Testimonials",
+	"path": "SuiteScripts/extensions/NetSuite/Testimonials@1.0.2",
+	"activation_id": "3",
+	"extension_id": "1104"
+}

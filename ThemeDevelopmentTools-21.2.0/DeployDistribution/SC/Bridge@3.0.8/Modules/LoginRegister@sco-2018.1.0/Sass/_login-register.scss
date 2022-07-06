@@ -1,0 +1,66 @@
+/* Edited for Bridge Theme */
+
+.login-register-header {
+    @extend .row;
+    margin-bottom: $sc-margin-lv4;
+}
+
+.login-register-title {
+    font-weight: 400;
+    color: black;
+    text-transform: capitalize;
+    @extend .col-xs-12;
+}
+
+.login-register-title-noregister {
+    text-align: center;
+}
+
+.login-register-body {
+    @extend .row;
+}
+
+.login-register-body-colored {
+    @extend .login-register-body;
+    & .login-register-wrapper-column-login {
+        @extend .col-sm-push-3;
+    }
+}
+
+.login-register-wrapper-column-login,
+.login-register-wrapper-column-register {
+    @extend .col-xs-12;
+    @extend .col-sm-6;
+}
+
+.login-register-wrapper-login {
+    padding: 0px;
+    border: 0px;
+    @extend .box-column;
+}
+
+.login-register-wrapper-register {
+    padding-top: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    @extend .box-column;
+}
+
+.login-register-wrapper-login_ {
+    padding-top: 0px;
+    @extend .box-column;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.login-register-wrapper-guest {}
+
+.login-register-title-register {
+    font-size: 19px;
+    padding: 15px 30px;
+    color: white;
+    background-color: #5F92BD;
+    text-transform: capitalize;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}

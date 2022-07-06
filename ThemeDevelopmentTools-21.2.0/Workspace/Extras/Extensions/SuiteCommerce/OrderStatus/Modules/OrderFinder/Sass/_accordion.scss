@@ -1,0 +1,80 @@
+.sc-order-status-accordion{
+  &-head{
+    @extend .small-title;
+    text-transform: inherit;
+
+    &-toggle,
+    &-toggle-secondary {
+      display: block;
+      cursor: pointer;
+      height: 100%;
+      line-height: $sc-target-size;
+      padding: 0 $sc-padding-lv4;
+      font-size: $sc-font-size-m;
+      border: 1px solid $sc-color-theme-border;
+    }
+
+    &-toggle {
+      color: $sc-color-secondary;
+      font-weight: $sc-font-weight-bold;
+      &-secondary {
+        color: $sc-color-copy;
+      }
+    }
+
+    &-toggle:hover,
+    &-toggle-secondary:hover {
+      text-decoration: none;
+      color: $sc-color-copy-dark;
+    }
+  }
+
+  &-head-toggle-icon,
+  &-toggle-icon,
+  &-toggle-icon-secondary {
+    @extend .fa;
+    @extend %fa-angle-up;
+    float: right;
+    height: $sc-target-size;
+    line-height: $sc-target-size;
+    font-size: $sc-font-size-xl;
+    color: $sc-color-secondary;
+    @include transition (transform $sc-animation-base-duration ease)
+  }
+
+  &-body,
+  &-body-secondary,
+  &-body-alt {
+    overflow: hidden;
+    background-color: $sc-neutral-shade-0;
+    border: 1px solid $sc-color-theme-border;
+    border-top: 0;
+    width: 100%;
+  }
+
+  &-body-alt {
+    background-color: $sc-color-theme-background;
+  }
+
+  &-container {
+    margin: $sc-margin-lv4;
+  }
+
+  &-toggle-icon-secondary {
+    color: $sc-color-copy;
+  }
+
+  .collapsed &-head-toggle-icon,
+  .collapsed &-toggle-icon,
+  .collapsed &-toggle-icon-secondary {
+    @include rotate(180deg);
+  }
+
+  &-container-table {
+    margin: 0;
+  }
+
+  &-divider {
+    margin-bottom: $sc-margin-lv4;
+  }
+}
