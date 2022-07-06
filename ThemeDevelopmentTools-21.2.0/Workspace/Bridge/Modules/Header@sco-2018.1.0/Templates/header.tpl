@@ -81,7 +81,7 @@
 		</div>
 		<div class="header-secondary-wrapper" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar">
 		</div>
-		<div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch"></div>
+		<div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch" style="display: block;"></div>
 		<div class="cart-login">
 		 <div class="header-menu-profile" data-view="Header.Profile"></div>
 		  <div class="header-menu-cart">
@@ -95,7 +95,13 @@
 	</div>
 </div>
 
-
+<script>
+$(document).ready(function(){
+  
+    $(".header-site-search").css("display", "block");
+  
+});
+</script>
 
 
 {{!----

@@ -20,7 +20,7 @@ define('address_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], fu
     + alias4(((helper = (helper = compilerNameLookup(helpers,"title") || (depth0 != null ? compilerNameLookup(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":40,"column":7},"end":{"line":40,"column":16}}}) : helper)))
     + "</b>\r\n			</p>\r\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCompanyAndFullName") : depth0),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.program(22, data, 0),"data":data,"loc":{"start":{"line":42,"column":3},"end":{"line":55,"column":10}}})) != null ? stack1 : "")
-    + "			<p class=\"address-details-container-multiselect-address-details-addr1\" data-name=\"addr1\">\r\n				"
+    + "			<p class=\"address-details-container-multiselect-address-details-addr1\" data-name=\"addr1\" style=\"    padding: 10px 0 0 0;\">\r\n				"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"addressLine1") || (depth0 != null ? compilerNameLookup(depth0,"addressLine1") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"addressLine1","hash":{},"data":data,"loc":{"start":{"line":57,"column":4},"end":{"line":57,"column":20}}}) : helper)))
     + "\r\n			</p>\r\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showAddressLine1") : depth0),{"name":"if","hash":{},"fn":container.program(25, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":59,"column":3},"end":{"line":63,"column":10}}})) != null ? stack1 : "")
@@ -32,10 +32,10 @@ define('address_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], fu
     + alias4(((helper = (helper = compilerNameLookup(helpers,"zip") || (depth0 != null ? compilerNameLookup(depth0,"zip") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"zip","hash":{},"data":data,"loc":{"start":{"line":74,"column":7},"end":{"line":74,"column":14}}}) : helper)))
     + "\r\n						</span>\r\n			</p>\r\n			<p class=\"address-details-country\" data-name=\"country\">\r\n				"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"country") || (depth0 != null ? compilerNameLookup(depth0,"country") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"country","hash":{},"data":data,"loc":{"start":{"line":78,"column":4},"end":{"line":78,"column":15}}}) : helper)))
-    + "\r\n			</p>\r\n			<p class=\"address-details-phone\" data-name=\"phone\">\r\n				<a href=\"tel:"
+    + "\r\n			</p>\r\n			<p class=\"address-details-phone\" data-name=\"phone\" style=\"padding: 10px 0 0 0;\">\r\n				<a href=\"tel:"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"phone") || (depth0 != null ? compilerNameLookup(depth0,"phone") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"phone","hash":{},"data":data,"loc":{"start":{"line":81,"column":17},"end":{"line":81,"column":26}}}) : helper)))
-    + "\">"
-    + alias4(((helper = (helper = compilerNameLookup(helpers,"phone") || (depth0 != null ? compilerNameLookup(depth0,"phone") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"phone","hash":{},"data":data,"loc":{"start":{"line":81,"column":28},"end":{"line":81,"column":37}}}) : helper)))
+    + "\" style=\"color: black;\">"
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"phone") || (depth0 != null ? compilerNameLookup(depth0,"phone") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"phone","hash":{},"data":data,"loc":{"start":{"line":81,"column":50},"end":{"line":81,"column":59}}}) : helper)))
     + "</a>\r\n			</p>\r\n		</div>\r\n	</address>\r\n\r\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showDefaultLabels") : depth0),{"name":"if","hash":{},"fn":container.program(29, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":86,"column":1},"end":{"line":100,"column":8}}})) != null ? stack1 : "")
     + "\r\n"
@@ -182,4 +182,4 @@ define('address_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], fu
   return "\r\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"isNewAddress") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data,"loc":{"start":{"line":8,"column":0},"end":{"line":128,"column":7}}})) != null ? stack1 : "")
     + "\r\n\r\n\r\n\r\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.9/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.9/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'address_details'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.14/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.14/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'address_details'; return template;});

@@ -53,7 +53,7 @@
 							</span>
 			{{/if}}
 			{{/if}}
-			<p class="address-details-container-multiselect-address-details-addr1" data-name="addr1">
+			<p class="address-details-container-multiselect-address-details-addr1" data-name="addr1" style="    padding: 10px 0 0 0;">
 				{{addressLine1}}
 			</p>
 			{{#if showAddressLine1}}
@@ -77,8 +77,8 @@
 			<p class="address-details-country" data-name="country">
 				{{country}}
 			</p>
-			<p class="address-details-phone" data-name="phone">
-				<a href="tel:{{phone}}">{{phone}}</a>
+			<p class="address-details-phone" data-name="phone" style="padding: 10px 0 0 0;">
+				<a href="tel:{{phone}}" style="color: black;">{{phone}}</a>
 			</p>
 		</div>
 	</address>

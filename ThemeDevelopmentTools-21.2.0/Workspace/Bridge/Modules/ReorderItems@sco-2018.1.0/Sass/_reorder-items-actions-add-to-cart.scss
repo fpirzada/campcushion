@@ -1,11 +1,17 @@
-.reorder-items-actions-add-to-cart{
-	@extend .button-primary;
-	@extend .button-medium;
-	width:auto;
+.reorder-items-actions-add-to-cart {
+    @extend .button-primary;
+    @extend .button-medium;
+    width: auto;
 }
 
-.reorder-items-actions-add-to-cart-button-container{
-	@media(min-width: $screen-sm-min){
-		text-align: right;
-	}
+.reorder-items-actions-add-to-cart-button-container {
+    @media(min-width: $screen-sm-min) {
+        text-align: right;
+        border-color: #00426a;
+        background: #00426a !important;
+        text-transform: capitalize;
+        min-width: 100px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
 }

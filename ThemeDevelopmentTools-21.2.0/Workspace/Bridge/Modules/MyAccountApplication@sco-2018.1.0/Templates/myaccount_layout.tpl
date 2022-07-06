@@ -20,10 +20,12 @@
 
 		<!--h2 class="myaccount-layout-title">{{translate 'My Account'}}</h2-->
 		<div class="myaccount-layout-height account-head">
-		 <img src="/core/media/media.nl?id=25470&c=4420736_SB1&h=ofjiZHJGB1oB1_FpwChz9T635vbE8nQvLrrTyunCZtVDy43Y&fcts=20220516082728&whence=" alt="" />
-			<div data-view="accountUserProfile" class="banner-profile">
+		 <img src="https://4420736.app.netsuite.com/core/media/media.nl?id=26615&c=4420736&h=zf6aF5qzK-agED06ESMrYZAOSLF-c8s7PbIcv6qgraUPsQla&fcts=20220701053824&whence=" alt="" />
+			<div class="banner-profile">
 				
-				
+				<h2>Hi Fortune Test Company, Welcome Back</h2>
+<span>Not  Fortune Test Company, <a href="/logOut.ssp?logoff=T&ckabandon=T" data-touchpoint="logout"   name="signout">Log Out</a></span>
+
 			</div>
 		</div>
 		<div class="myaccount-layout-row">

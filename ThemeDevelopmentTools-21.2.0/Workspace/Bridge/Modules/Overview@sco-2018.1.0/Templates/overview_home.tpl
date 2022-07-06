@@ -7,28 +7,7 @@
 <div class="acc-boxes">
 	<div class="box-in">
 		<div class="box-up">
-		   <img src="/core/media/media.nl?id=25472&c=4420736_SB1&h=xxsh6yOjtgbIHd04-E_agcfj5Yc656CaYm_iShGjz7Nx_E4n&fcts=20220517083108&whence=" alt="" /> My Cart
-		</div>
-		<div class="box-down" >
-			<div id="myCart" class="count">0</div>
-			<a href="/">View All</a>
-		</div>
-	</div>
-
-
-	<div class="box-in">
-		<div class="box-up">
-		   <img src="/core/media/media.nl?id=25474&c=4420736_SB1&h=XLqmCTHsA9gK-J25ykBztyyYzYlwLfoLgUYASMRvbydM69RP&fcts=20220517083129&whence=" alt="" /> My Invoices
-		</div>
-		<div class="box-down">
-			<div id="dueInvoice" class="count">$0.00</div>
-			<a href="/">Manage Invoices</a>
-		</div>
-	</div>
-
-	<div class="box-in">
-		<div class="box-up">
-		   <img src="/core/media/media.nl?id=25475&c=4420736_SB1&h=BijgQXdjs1ip0O2wfF9hIMUm0vNMqIcghLvoHzjMSUvbzGDJ&fcts=20220517083137&whence=" alt="" /> Recent Orders
+		   <img src="https://4420736.app.netsuite.com/core/media/media.nl?id=26622&c=4420736&h=-4983vA0eowgztS2Gx8pr-NG9DPCU6vfqziN4LuAgTY5qUhv&fcts=20220701053824&whence=" alt="" /> My Cart
 		</div>
 		<div class="box-down">
 			<div class="count">0</div>
@@ -38,7 +17,27 @@
 
 	<div class="box-in">
 		<div class="box-up">
-		   <img src="/core/media/media.nl?id=25473&c=4420736_SB1&h=pxqlOcIk0a8GtYMSP7ppaH4MCC9Ar82hQfzz6QuNmTu0fDqG&fcts=20220517083121&whence=" alt="" /> Order Status
+		   <img src="https://4420736.app.netsuite.com/core/media/media.nl?id=26613&c=4420736&h=0xTQiZM1TyEfA-sGc9_Z9MK1x5loO6B-z_e_s4b5SjkBiHut&fcts=20220701053824&whence=" alt="" /> My Invoices
+		</div>
+		<div class="box-down">
+			<div class="count">$0.00</div>
+			<a href="/">Manage Invoices</a>
+		</div>
+	</div>
+
+	<div class="box-in">
+		<div class="box-up">
+		   <img src="https://4420736.app.netsuite.com/core/media/media.nl?id=26621&c=4420736&h=20O-lUhluFqj_By2oKz-i7Ir9urbYMpGIWRQvz5bZJcmbjed&fcts=20220701053824&whence=" alt="" /> Recent Orders
+		</div>
+		<div class="box-down">
+			<div class="count">0</div>
+			<a href="/">View All</a>
+		</div>
+	</div>
+
+	<div class="box-in">
+		<div class="box-up">
+		   <img src="https://4420736.app.netsuite.com/core/media/media.nl?id=26623&c=4420736&h=L98MzzjkwIrmhjKGFoIurwSJdd7aiR1K5DdTINljb2LxNyrC&fcts=20220701053824&whence=" alt="" /> Order Status
 		</div>
 		<div class="box-down">
 			<div class="count">0</div>
@@ -234,16 +233,6 @@
 
 
 
-
-<script>
-var txt = $('#_myCart').text();
-
-$('#myCart').html(txt);
-
-var txt = $('#_profileBalance').text();
-
-$('#dueInvoice').html(txt);
-</script>
 {{!----
 Use the following context variables when customizing this template:
 

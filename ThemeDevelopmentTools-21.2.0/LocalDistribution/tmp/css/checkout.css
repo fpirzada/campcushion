@@ -9339,11 +9339,11 @@ input[type="number"].quantity-input, .reorder-items-actions-quantity-input input
   margin: 0; }
 
 .address-details-new-address {
-  height: 235px; }
+  height: 280px; }
 
 .address-details-new-address-title {
   display: inline-block;
-  margin-top: 60px;
+  margin-top: 100px;
   color: #7e858b;
   font-size: 1.1rem;
   font-weight: bold; }
@@ -9360,6 +9360,9 @@ input[type="number"].quantity-input, .reorder-items-actions-quantity-input input
 
 .address-details-selected {
   background-color: white; }
+
+.address-details-action {
+  color: black !important; }
 
 .address-details-selector-option {
   cursor: pointer;
@@ -9430,7 +9433,13 @@ input[type="number"].quantity-input, .reorder-items-actions-quantity-input input
 
 @media (min-width: 768px) {
   .reorder-items-actions-add-to-cart-button-container {
-    text-align: right; } }
+    text-align: right;
+    border-color: #00426a;
+    background: #00426a !important;
+    text-transform: capitalize;
+    min-width: 100px;
+    border-radius: 5px;
+    margin-right: 10px; } }
 
 .reorder-items-actions-quantity-last-purchased {
   display: block;
@@ -9451,8 +9460,11 @@ input[type="number"].quantity-input, .reorder-items-actions-quantity-input input
   display: inline-flex; }
 
 .reorder-items-list-header {
-  border-top: 1px solid #c8d6e3;
   padding: 15px 0; }
+  .reorder-items-list-header h2, .reorder-items-list-header h3.product-reviews-center-container-header-title, .reorder-items-list-header .testimonial .product-reviews-center-container-header-title.testimonial-content-title, .testimonial .reorder-items-list-header .product-reviews-center-container-header-title.testimonial-content-title, .reorder-items-list-header .featuredproductcct-layout .ribbon, .featuredproductcct-layout .reorder-items-list-header .ribbon {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: black; }
 
 @media (min-width: 768px) {
   .reorder-items-list .transaction-line-views-cell-actionable-options {
@@ -10851,6 +10863,20 @@ input.creditcard-edit-form-securitycode-group-input {
 
 .global-views-confirmation-footer {
   margin-top: 15px; }
+
+.global-views-confirmation-confirm-button {
+  border-color: #00426a;
+  background: #00426a !important;
+  text-transform: capitalize;
+  min-width: 100px;
+  border-radius: 5px; }
+
+.global-views-confirmation-cancel-button {
+  background: #71A3C8 !important;
+  text-transform: capitalize;
+  min-width: 100px;
+  border-color: #71A3C8;
+  border-radius: 5px; }
 
 /*
 	© 2017 NetSuite Inc.
@@ -14805,6 +14831,7 @@ input.order-wizard-msr-package-creation-edit-quantity-item-editable-quantity-nor
 .order-wizard-showshipments-module-shipping-details-address {
   margin-bottom: 20px; }
   .order-wizard-showshipments-module-shipping-details-address .address-details {
+    border-radius: 10px;
     padding: 15px;
     border: 1px solid #c8d6e3; }
   .order-wizard-showshipments-module-shipping-details-address .address-details-info {
@@ -15236,6 +15263,7 @@ input.order-wizard-msr-package-creation-edit-quantity-item-editable-quantity-nor
 	may use this code subject to the terms that govern your access and use.
 */
 .header-site-search {
+  display: block;
   position: relative;
   z-index: 5; }
 
@@ -17584,6 +17612,31 @@ button:active {
     #wizard {
       padding-left: 60px;
       padding-right: 60px; } }
+
+.shopping-layout-breadcrumb,
+.checkout-layout-breadcrumb,
+.myaccount-layout-container,
+.cart,
+.cart-detailed,
+.cart-detailed,
+.error-management-forbidden-error,
+.error-management-internal-error,
+.error-management-page-not-found,
+.facets-facet-browse,
+.product-details-full,
+.productcompare-dashboard,
+.product-reviews-form,
+.product-reviews-form-preview,
+.product-reviews-form-confirmation,
+.cms-landing-page,
+.contact-us-container,
+.guest-order-status-layout-container,
+.look-layout-container,
+.lookbook-layout-container,
+.login-register,
+#wizard {
+  padding-left: 10px !important;
+  padding-right: 10px !important; }
 
 .shopping-layout-breadcrumb,
 .checkout-layout-breadcrumb,

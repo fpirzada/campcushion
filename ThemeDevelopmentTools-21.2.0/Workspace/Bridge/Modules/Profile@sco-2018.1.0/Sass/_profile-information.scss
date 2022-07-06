@@ -5,70 +5,99 @@
 	may use this code subject to the terms that govern your access and use.
 */
 
-.profile-information{
-	@extend .box-column-bordered;
+.profile-information {
+    border: none !important;
+    @extend .box-column-bordered;
 }
 
-.profile-information-button-update{
-	@extend .button-primary;
-	@extend .button-medium;
-	margin-right:$sc-margin-lv2;
-	margin-bottom:$sc-margin-lv2;
-
-	@media (min-width: $screen-sm-min) {
-		margin-bottom: 0;
-	}
+.profile-information-button-update {
+    border-color: #00426a;
+    background: #00426a !important;
+    text-transform: capitalize;
+    min-width: 100px;
+    border-radius: 5px;
+    @extend .button-primary;
+    @extend .button-medium;
+    margin-right: $sc-margin-lv2;
+    margin-bottom: $sc-margin-lv2;
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: 0;
+    }
 }
+
 .profile-information-form-label {
-	display: inline-block;
+    display: inline-block;
 }
 
 .profile-information-form-group-label-required {
-	@extend .input-required;
-}
-.profile-information-button-cancel{
-	@extend .button-secondary;
-	@extend .button-medium;
+    @extend .input-required;
 }
 
-.profile-information-label{}
+.profile-information-button-cancel {
+    @extend .button-secondary;
+    @extend .button-medium;
+}
 
-.profile-information-input-large{
-	@extend .input-large;
+.profile-information-label {
+    color: black !important;
+    font-weight: bold;
+}
+
+.profile-information-input-large {
+    @extend .input-large;
 }
 
 .profile-information-row,
-.profile-information-form-actions{
-	margin-top: $sc-margin-lv4;
+.profile-information-form-actions {
+    margin-top: $sc-margin-lv4;
 }
 
-.profile-information-input-required{
-	@extend .input-required;
+.profile-information-input-required {
+    @extend .input-required;
 }
 
-.profile-information-input-optional{
-	@extend .input-optional;
+.profile-information-input-optional {
+    @extend .input-optional;
 }
 
-.profile-information-input-required-reference{
-	@extend .input-required;
-	margin-bottom:$sc-margin-lv4;
+.profile-information-input-optional- {
+    color: aqua !important;
+    @extend .input-optional;
+}
+
+.profile-information-input-optional-e {
+    color: black !important;
+    @extend .input-optional;
+}
+
+.profile-information-input-required-reference {
+    @extend .input-required;
+    margin-bottom: $sc-margin-lv4;
 }
 
 .profile-information-button-back {
-	@extend .button-back;
+    @extend .button-back;
 }
 
 .profile-information-button-back-icon {
-	@extend .button-back-icon;
+    @extend .button-back-icon;
 }
 
-.profile-information-header{
-	margin-bottom:$sc-margin-lv4;
+.profile-information-header {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 2%;
+    border-bottom: 1px solid;
+    margin-bottom: $sc-margin-lv4;
 }
 
-.profile-information-row-fluid{}
-.profile-information-col{}
-.profile-information-group-form-controls{}
-.profile-information-input-email{}
-.profile-information-change-email-address{}
+.profile-information-row-fluid {}
+
+.profile-information-col {}
+
+.profile-information-group-form-controls {}
+
+.profile-information-input-email {}
+
+.profile-information-change-email-address {}

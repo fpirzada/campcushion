@@ -51,7 +51,7 @@
 							{{#if isCompanyFieldRequired}}
 								<small class="profile-information-input-required">*</small>
 							{{else}}
-								<small class="profile-information-input-optional">{{translate '(optional)'}}</small>
+								<small class="profile-information-input-optional-">{{translate '(optional)'}}</small>
 							{{/if}}
 						</label>
 						<div class="profile-information-group-form-controls" data-validation="control">
@@ -63,16 +63,17 @@
 				<div class="profile-information-row" data-input="phone" data-validation="control-group">
 					<label class="profile-information-label" for="phone">
 						{{#if phoneFormat}}
-							{{translate 'Phone Number (ex/$(0))' phoneFormat}}
+							{{translate 'Phone Number' phoneFormat}}
 						{{else}}
 							{{translate 'Phone Number'}}
 						{{/if}}
 						{{#if isPhoneFieldRequired}}
 							<small class="profile-information-input-required">*</small>
 						{{else}}
-							<small class="profile-information-input-optional">{{translate '(optional)'}}</small>
+							<small class="profile-information-input-optional-">{{translate '(optional)'}}</small>
 						{{/if}}
-					</label>
+<small class="profile-information-input-optional-e">(ex/(123) 456-7890)</small>
+					</label> 
 					<div class="profile-information-group-form-controls" data-validation="control">
 						<input type="tel" class="profile-information-input-large" id="phone" name="phone" data-type="phone" value="{{phone}}">
 					</div>
@@ -85,7 +86,7 @@
 
 			</fieldset>
 			<div class="profile-information-form-actions">
-				<button type="submit" class="profile-information-button-update">{{translate 'Update'}}</button>
+				<button type="submit" class="profile-information-button-update">{{translate 'Save'}}</button>
 			</div>
 		</form>
 	</div>

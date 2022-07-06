@@ -6,22 +6,32 @@
 */
 
 .global-views-confirmation {
-	padding-top: 0;
+    padding-top: 0;
 }
 
 .global-views-confirmation-footer {
-	margin-top: $sc-margin-lv3;
+    margin-top: $sc-margin-lv3;
 }
 
 .global-views-confirmation-confirm-button {
-	@extend .button-primary;
-	@extend .button-medium;
+    border-color: #00426a;
+    background: #00426a !important;
+    text-transform: capitalize;
+    min-width: 100px;
+    border-radius: 5px;
+    @extend .button-primary;
+    @extend .button-medium;
 }
 
 .global-views-confirmation-cancel-button {
-	@extend .button-positioning-stack2next;
-	@extend .button-secondary;
-	@extend .button-medium;
+    background: #71A3C8 !important;
+    text-transform: capitalize;
+    min-width: 100px;
+    border-color: #71A3C8;
+    border-radius: 5px;
+    @extend .button-positioning-stack2next;
+    @extend .button-secondary;
+    @extend .button-medium;
 }
 
-.global-views-confirmation-body{}
+.global-views-confirmation-body {}

@@ -84,6 +84,8 @@ button:active {
 .lookbook-layout-container,
 .login-register,
 #wizard {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     @extend .content-background;
 }
 

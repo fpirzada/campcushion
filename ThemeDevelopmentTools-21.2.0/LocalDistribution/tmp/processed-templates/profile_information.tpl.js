@@ -29,12 +29,12 @@ define('profile_information.tpl', ['Handlebars','Handlebars.CompilerNameLookup']
 },"6":function(container,depth0,helpers,partials,data) {
     return "								<small class=\"profile-information-input-required\">*</small>\r\n";
 },"8":function(container,depth0,helpers,partials,data) {
-    return "								<small class=\"profile-information-input-optional\">"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"(optional)",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":54,"column":58},"end":{"line":54,"column":84}}}))
+    return "								<small class=\"profile-information-input-optional-\">"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"(optional)",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":54,"column":59},"end":{"line":54,"column":85}}}))
     + "</small>\r\n";
 },"10":function(container,depth0,helpers,partials,data) {
     return "							"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Phone Number (ex/$(0))",(depth0 != null ? compilerNameLookup(depth0,"phoneFormat") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":66,"column":7},"end":{"line":66,"column":57}}}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Phone Number",(depth0 != null ? compilerNameLookup(depth0,"phoneFormat") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":66,"column":7},"end":{"line":66,"column":47}}}))
     + "\r\n";
 },"12":function(container,depth0,helpers,partials,data) {
     return "							"
@@ -43,13 +43,13 @@ define('profile_information.tpl', ['Handlebars','Handlebars.CompilerNameLookup']
 },"14":function(container,depth0,helpers,partials,data) {
     return "							<small class=\"profile-information-input-required\">*</small>\r\n";
 },"16":function(container,depth0,helpers,partials,data) {
-    return "							<small class=\"profile-information-input-optional\">"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"(optional)",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":73,"column":57},"end":{"line":73,"column":83}}}))
+    return "							<small class=\"profile-information-input-optional-\">"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"(optional)",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":73,"column":58},"end":{"line":73,"column":84}}}))
     + "</small>\r\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "\n"
+  return "\r\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showBackToAccount") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":0},"end":{"line":13,"column":7}}})) != null ? stack1 : "")
     + "\r\n<div class=\"profile-information\">\r\n<h2 class=\"profile-information-header\">"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"pageHeader") || (depth0 != null ? compilerNameLookup(depth0,"pageHeader") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"pageHeader","hash":{},"data":data,"loc":{"start":{"line":16,"column":39},"end":{"line":16,"column":53}}}) : helper)))
@@ -60,15 +60,15 @@ define('profile_information.tpl', ['Handlebars','Handlebars.CompilerNameLookup']
     + "\r\n				<div class=\"profile-information-row\" data-input=\"phone\" data-validation=\"control-group\">\r\n					<label class=\"profile-information-label\" for=\"phone\">\r\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"phoneFormat") : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(12, data, 0),"data":data,"loc":{"start":{"line":65,"column":6},"end":{"line":69,"column":13}}})) != null ? stack1 : "")
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isPhoneFieldRequired") : depth0),{"name":"if","hash":{},"fn":container.program(14, data, 0),"inverse":container.program(16, data, 0),"data":data,"loc":{"start":{"line":70,"column":6},"end":{"line":74,"column":13}}})) != null ? stack1 : "")
-    + "					</label>\r\n					<div class=\"profile-information-group-form-controls\" data-validation=\"control\">\r\n						<input type=\"tel\" class=\"profile-information-input-large\" id=\"phone\" name=\"phone\" data-type=\"phone\" value=\""
-    + alias4(((helper = (helper = compilerNameLookup(helpers,"phone") || (depth0 != null ? compilerNameLookup(depth0,"phone") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"phone","hash":{},"data":data,"loc":{"start":{"line":77,"column":113},"end":{"line":77,"column":122}}}) : helper)))
+    + "<small class=\"profile-information-input-optional-e\">(ex/(123) 456-7890)</small>\r\n					</label> \r\n					<div class=\"profile-information-group-form-controls\" data-validation=\"control\">\r\n						<input type=\"tel\" class=\"profile-information-input-large\" id=\"phone\" name=\"phone\" data-type=\"phone\" value=\""
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"phone") || (depth0 != null ? compilerNameLookup(depth0,"phone") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"phone","hash":{},"data":data,"loc":{"start":{"line":78,"column":113},"end":{"line":78,"column":122}}}) : helper)))
     + "\">\r\n					</div>\r\n				</div>\r\n\r\n				<div class=\"profile-information-row\">\r\n					<label class=\"profile-information-label\">"
-    + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Email",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":82,"column":46},"end":{"line":82,"column":67}}}))
+    + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Email",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":83,"column":46},"end":{"line":83,"column":67}}}))
     + "</label>\r\n						<p class=\"profile-information-input-email\" id=\"email\">"
-    + alias4(((helper = (helper = compilerNameLookup(helpers,"email") || (depth0 != null ? compilerNameLookup(depth0,"email") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"email","hash":{},"data":data,"loc":{"start":{"line":83,"column":60},"end":{"line":83,"column":69}}}) : helper)))
+    + alias4(((helper = (helper = compilerNameLookup(helpers,"email") || (depth0 != null ? compilerNameLookup(depth0,"email") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"email","hash":{},"data":data,"loc":{"start":{"line":84,"column":60},"end":{"line":84,"column":69}}}) : helper)))
     + " | <a class=\"profile-information-change-email-address\" data-action=\"change-email\">"
-    + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Change Address",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":83,"column":151},"end":{"line":83,"column":181}}}))
+    + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Change Address",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":84,"column":151},"end":{"line":84,"column":181}}}))
     + "</a></p>\r\n				</div>\r\n\r\n			</fieldset>\r\n			<div class=\"profile-information-form-actions\">\r\n				<button type=\"submit\" class=\"profile-information-button-update\">"
-    + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Update",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":88,"column":68},"end":{"line":88,"column":90}}}))
+    + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Save",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":89,"column":68},"end":{"line":89,"column":88}}}))
     + "</button>\r\n			</div>\r\n		</form>\r\n	</div>\r\n</section>\r\n</div>\r\n\r\n\r\n\r\n\r\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.9/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.9/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'profile_information'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.14/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/SC/Bridge/3.0.14/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'profile_information'; return template;});

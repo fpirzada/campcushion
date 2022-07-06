@@ -38,7 +38,7 @@
 		<div class="print-statement-form-group" data-validation="control-group">
 			<label class="print-statement-form-group-label" for="startDate">
 				{{translate 'Start date'}}
-				<span class="print-statement-form-group-label-optional">{{translate '(optional)'}}</span>
+				<span class="print-statement-form-group-label-optional-">{{translate '(optional)'}}</span>
 			</label>
 			<div  class="print-statement-form-controls" data-validation="control">
 				<input type="date" data-format="yyyy-mm-dd" id="startDate" name="startDate" class="print-statement-form-group-input" autocomplete="off" data-todayhighlight="true"/>
